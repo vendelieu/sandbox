@@ -1,0 +1,14 @@
+[versions]
+kotlin = "2.1.20"
+
+kotest = "5.9.1"
+mockk = "1.14.0"
+
+[libraries]
+# test
+test-kotest-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+test-kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
